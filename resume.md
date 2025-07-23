@@ -105,7 +105,7 @@ Navigation is structured based on your folder and file names.
 
 Mulinda Kevin Bruce  
 Student Web & Mobile Developer | Smart Gardening App Project  
-GitHub: [github.com/yourusername](https://github.com/yourusername)
+GitHub: [github.com/Dukent29](https://github.com/yourusername)
 
 ---
 
