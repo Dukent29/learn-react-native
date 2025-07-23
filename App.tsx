@@ -1,20 +1,23 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react';
+import { SafeAreaView, StatusBar, Platform } from 'react-native';
+import Header from './components/Header';
+import WalletSummary from './components/WalletSummary';
+import CryptoList from './components/CryptoList';
+import { appStyles } from './styles/App.styles';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <SafeAreaView style={appStyles.container}>
+      {/* StatusBar for Android */}
+      <StatusBar
+        backgroundColor="#1652f0"
+        barStyle="light-content"
+        translucent={Platform.OS === 'android'}
+      />
+      
+      <Header />
+      <WalletSummary />
+      <CryptoList />
+    </SafeAreaView>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
